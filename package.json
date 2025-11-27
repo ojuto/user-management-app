@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "zendesk-build": "ng build --base-href=\"./\" && rm -rf zendesk/assets/angular/* && cp -r dist/user-management-app-new/browser/* zendesk/assets/angular",
+    "zendesk-build": "ng build --base-href=\"./\" && rm -rf zendesk/assets/angular/* && cp -r dist/user-management-app/browser/* zendesk/assets/angular",
     "zendesk-serve": "npm run zendesk-build && cd zendesk && npx @zendesk/zcli apps:server"
   },
   "prettier": {
