@@ -1,0 +1,23 @@
+{
+  "name": "User Management App",
+  "author": {
+    "name": "Fynn Koch",
+    "email": "fkoch@ojuto.de"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "ticket_sidebar": {
+        "url": "assets/angular/index.html",
+        "flexible": true,
+        "size": {
+          "width": "100%",
+          "height": "600px"
+        }
+      }
+    }
+  },
+  "version": "1.0.0",
+  "frameworkVersion": "2.0"
+}

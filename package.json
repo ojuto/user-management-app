@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "zendesk-build": "ng build --base-href=\"./\" && rm -rf zendesk/assets/angular/* && cp -r dist/user-management-app-new/browser/* zendesk/assets/angular",
+    "zendesk-serve": "npm run zendesk-build && cd zendesk && npx @zendesk/zcli apps:server"
   },
   "prettier": {
     "printWidth": 100,
@@ -23,21 +25,23 @@
   "private": true,
   "packageManager": "npm@10.9.3",
   "dependencies": {
-    "@angular/common": "^21.0.0",
-    "@angular/compiler": "^21.0.0",
-    "@angular/core": "^21.0.0",
-    "@angular/forms": "^21.0.0",
-    "@angular/platform-browser": "^21.0.0",
-    "@angular/router": "^21.0.0",
-    "rxjs": "~7.8.0",
-    "tslib": "^2.3.0"
+    "@angular/cdk": "21.0.1",
+    "@angular/common": "21.0.1",
+    "@angular/compiler": "21.0.1",
+    "@angular/core": "21.0.1",
+    "@angular/forms": "21.0.1",
+    "@angular/material": "21.0.1",
+    "@angular/platform-browser": "21.0.1",
+    "@angular/router": "21.0.1",
+    "rxjs": "7.8.2",
+    "tslib": "2.8.1"
   },
   "devDependencies": {
-    "@angular/build": "^21.0.1",
-    "@angular/cli": "^21.0.1",
-    "@angular/compiler-cli": "^21.0.0",
-    "jsdom": "^27.1.0",
-    "typescript": "~5.9.2",
-    "vitest": "^4.0.8"
+    "@angular/build": "21.0.1",
+    "@angular/cli": "21.0.1",
+    "@angular/compiler-cli": "21.0.1",
+    "jsdom": "27.2.0",
+    "typescript": "5.9.3",
+    "vitest": "4.0.14"
   }
 }
