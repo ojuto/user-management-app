@@ -3,6 +3,7 @@
 /tmp
 /out-tsc
 /bazel-out
+zendesk/assets/angular/*
 
 # Node
 /node_modules
